@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Skolastika/Luontovahdit-backend-dev#readme",
   "dependencies": {
-    "bcrypt": "^3.0.2",
+    "bcrypt": "^2.0.1",
     "connect-mongo": "^2.0.3",
     "cors": "^2.8.5",
     "dotenv": "^6.1.0",
