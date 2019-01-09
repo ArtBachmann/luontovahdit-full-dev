@@ -15,7 +15,7 @@ const sampleData = {
       attendees: [
         {
           id: 'a',
-          name: 'Richard',
+          name: 'Alexander',
           photoURL: 'https://randomuser.me/api/portraits/men/32.jpg'
         },
         {

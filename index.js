@@ -5,13 +5,6 @@ const userModel = require("./models/user");
 const bcrypt = require("bcrypt")
 const profileRoute = require("./routes/profileRouter");
 const hotspotsRouter = require('./controllers/hotspots')
-const express = require("express");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
-const userModel = require("./models/user");
-const bcrypt = require("bcrypt")
-const profileRoute = require("./routes/profileRouter");
-const hotspotsRouter = require('./controllers/hotspots')
 const commentsRouter = require('./controllers/comments')
 const usersRouter = require('./controllers/users')
 const { isUserLogged } = require('./utils/authentication')
@@ -48,9 +41,9 @@ app.use(session({
     cookie: { maxAge: 180 * 60 * 60 * 24 },
     store: new MongoStore({
         collection: "session",
-        //url : "mongodb://localhost/luontovahditsession",
+        url: "mongodb://localhost/luontovahditsession",
         url: process.env.ATLAS_URI,
-        //mongooseConnection: mongoose.connection,
+        mongooseConnection: mongoose.connection,
         ttl: 24 * 60 * 60
     })
 }));
