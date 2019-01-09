@@ -5,6 +5,13 @@ const userModel = require("./models/user");
 const bcrypt = require("bcrypt")
 const profileRoute = require("./routes/profileRouter");
 const hotspotsRouter = require('./controllers/hotspots')
+cconst express = require("express");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const userModel = require("./models/user");
+const bcrypt = require("bcrypt")
+const profileRoute = require("./routes/profileRouter");
+const hotspotsRouter = require('./controllers/hotspots')
 const commentsRouter = require('./controllers/comments')
 const usersRouter = require('./controllers/users')
 const { isUserLogged } = require('./utils/authentication')
@@ -24,14 +31,14 @@ app.use(bodyParser.json())
 
 const port = process.env.PORT || 8000;
 
-// DB Config
-const db = require('./config/keys').mongoURI;
+mongoose.connect(process.env.ATLAS_URI,
 
-// Connect to MongoDB
-mongoose
-    .connect(db)
-    .then(() => console.log('MongoDB Connected'))
-    .catch(err => console.log(err));
+    { useNewUrlParser: true }
+
+).then(
+    () => { console.log("Connection to mongo DB successfull") },
+    (error) => { console.log("Connection to mongpDB failed: " + error) }
+);
 
 app.use(session({
     name: "luontovahdit-id",
