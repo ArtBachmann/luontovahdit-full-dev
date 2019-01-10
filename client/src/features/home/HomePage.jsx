@@ -4,6 +4,7 @@ import React from 'react'
 import SimpleSearch from '../search/SimpleSearch'
 import MainMap from '../map/MainMap'
 import Footer from './Footer'
+
 //import '../../index.css';
 const HomePage = ({ history }) => {
   return (
