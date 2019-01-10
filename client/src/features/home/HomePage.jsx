@@ -14,9 +14,6 @@ const HomePage = ({ history }) => {
       <br />
       <div className="ui inverted grey center aligned segment">
         <div className="ui text container">
-          {/* <h1 className="ui inverted stackable header">
-            <div className="content">Luontovahdit</div>
-          </h1> */}
           <div onClick={() => history.push('/activities')} className="ui big white inverted button">
             Havainnot
                 <i className="right arrow icon" />

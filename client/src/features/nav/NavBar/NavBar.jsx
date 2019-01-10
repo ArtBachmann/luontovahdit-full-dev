@@ -40,9 +40,7 @@ class NavBar extends Component {
       <Menu fixed="top">
         <Container>
           <SimpleSearch />
-          {authenticated &&
-            <Menu.Item as={Link} to='/' name="Kartta" />}
-
+          <Menu.Item as={Link} to='/' name="Kartta" />
           <Menu.Item as={Link} to='/activities' name="Havainnot" />
 
           {authenticated &&
