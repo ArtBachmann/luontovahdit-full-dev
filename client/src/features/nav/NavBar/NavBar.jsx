@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Menu, Container } from 'semantic-ui-react'
 import { Link, withRouter } from 'react-router-dom'
+import SimpleSearch from '../../search/SimpleSearch'
 import SignedOutMenu from '../Menus/SignedOutMenu'
 import SignedInMenu from '../Menus/SignedInMenu'
 import { openModal } from '../../modals/modalActions'
@@ -38,17 +39,15 @@ class NavBar extends Component {
     return (
       <Menu fixed="top">
         <Container>
-
-          {authenticated &&
-            <Menu.Item as={Link} to='/people' name="Osallistujat" />}
-
+          <SimpleSearch />
+          <Menu.Item as={Link} to='/' name="Kartta" />
           <Menu.Item as={Link} to='/activities' name="Havainnot" />
 
           {authenticated &&
             <Menu.Item
               as={Link}
               to='/createActivity'
-              floated="right"
+              floated="left"
               basic
               color=''
               content="Uusi havainto"

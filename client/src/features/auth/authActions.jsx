@@ -13,3 +13,20 @@ export const logout = () => {
     type: SIGN_OUT_USER
   }
 }
+
+
+
+// export const updatePassword = (creds) =>
+//   async (dispatch, getState, {getFirebase}) => {
+//     const firebase = getFirebase();
+//     const user = firebase.auth().currentUser;
+//     try {
+//       await user.updatePassword(creds.newPassword1);
+//       await dispatch(reset('account'));
+//       toastr.success('Success', 'Your password has been updated')
+//     } catch (error) {
+//       throw new SubmissionError({
+//         _error: error.message
+//       })
+//     }
+//   }
