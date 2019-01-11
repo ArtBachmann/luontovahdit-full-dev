@@ -47,7 +47,7 @@ class NavBar extends Component {
             <Menu.Item
               as={Link}
               to='/createActivity'
-              floated="right"
+              floated="left"
               basic
               color=''
               content="Uusi havainto"

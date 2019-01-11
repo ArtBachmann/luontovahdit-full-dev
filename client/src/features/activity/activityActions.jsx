@@ -3,6 +3,8 @@ import { CREATE_ACTIVITY, DELETE_ACTIVITY, UPDATE_ACTIVITY, FETCH_ACTIVITIES } f
 import { asyncActionStart, asyncActionFinish, asyncActionError } from '../async/asyncActions'
 import { fetchSampleData } from '../../app/data/mockApi'
 
+
+// Creating actions
 export const fetchActivities = (activities) => {
     return {
         type: FETCH_ACTIVITIES,
