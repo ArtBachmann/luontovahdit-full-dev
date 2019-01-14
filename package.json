@@ -2,8 +2,8 @@
   "name": "luontovahdit",
   "version": "1.0.0",
   "engines": {
-    "node": "10.12.0",
-    "npm": "4.6.1"
+    "node": "11.0.0",
+    "npm": "6.4.1"
   },
   "description": "Social network for developers",
   "main": "server.js",
