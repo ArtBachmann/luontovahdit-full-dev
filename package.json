@@ -1,12 +1,15 @@
 {
-  "name": "luontovahdit-backend-dev",
+  "name": "luontovahdit-full-dev",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node index.js",
     "watch": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run index\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
   "homepage": "https://github.com/Skolastika/Luontovahdit-backend-dev#readme",
   "dependencies": {
     "bcrypt": "^2.0.1",
+    "concurrently": "^4.1.0",
     "connect-mongo": "^2.0.3",
     "cors": "^2.8.5",
     "dotenv": "^6.1.0",

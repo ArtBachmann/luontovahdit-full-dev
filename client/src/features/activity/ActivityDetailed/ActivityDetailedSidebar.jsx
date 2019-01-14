@@ -52,5 +52,7 @@ const ActivtyDetailedSidebar = ({ attendees }) => {
     </div>
   )
 }
+// Here is some work todo.
+
 
 export default ActivtyDetailedSidebar
