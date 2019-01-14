@@ -3,7 +3,7 @@ import { Segment, Form, Header, Divider, Button } from 'semantic-ui-react';
 import { Field, reduxForm } from 'redux-form';
 import moment from 'moment'
 import DateInput from "../../../app/common/form/DateInput";
-import PlaceInput from "../../../app/common/form/PlaceInput";
+//import PlaceInput from "../../../app/common/form/PlaceInput";
 import TextInput from "../../../app/common/form/TextInput";
 import RadioInput from '../../../app/common/form/RadioInput';
 
@@ -51,14 +51,14 @@ class Basics extends Component {
             dropdownMode='select'
             maxDate={moment().subtract(18, 'years')}
           />
-          <Field
+          {/* <Field
             name='city'
             placeholder='Kotipaikka'
             options={{ types: ['(cities)'] }}
             label='Female'
             component={PlaceInput}
             width={8}
-          />
+          /> */}
           <Divider />
           <Button disabled={pristine || submitting} size='large' positive content='Muokka profiilia' />
         </Form>

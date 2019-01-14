@@ -4,7 +4,7 @@ import { Field, reduxForm } from 'redux-form';
 //import RadioInput from '../../../app/common/form/RadioInput';
 import TextInput from '../../../app/common/form/TextInput';
 import TextArea from '../../../app/common/form/TextArea';
-import PlaceInput from '../../../app/common/form/PlaceInput';
+//import PlaceInput from '../../../app/common/form/PlaceInput';
 import SelectInput from '../../../app/common/form/SelectInput';
 import RadioInput from '../../../app/common/form/RadioInput';
 
@@ -63,13 +63,13 @@ const AboutPage = ({ pristine, submitting }) => {
           component={TextInput}
           placeholder="Ammatti"
         />
-        <Field
+        {/* <Field
           width={8}
           name="origin"
           options={{ types: ['(regions)'] }}
           component={PlaceInput}
           placeholder="Mistä tulet"
-        />
+        /> */}
         <Divider />
         <Button disabled={pristine || submitting} size="large" positive content="Täydentää profiilia" />
       </Form>
