@@ -1,4 +1,6 @@
-module.exports = {
-  mongoURI: 'mongodb://Artb:2kama2@ds153974.mlab.com:53974/rest-maximillian',
-  secretOrKey: 'secret'
-};
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./keys_prod');
+} else {
+  module.exports = require('./keys_dev');
+}

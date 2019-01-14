@@ -40,10 +40,6 @@
     "redux-devtools-extension": "^2.13.2",
     "source-map-explorer": "^1.5.0"
   },
-<<<<<<< HEAD
-  "proxy": "http://localhost:5000"
-}
-=======
   "proxy": "http://localhost:5000",
   "browserslist": [
     ">0.2%",
@@ -52,4 +48,3 @@
     "not op_mini all"
   ]
 }
->>>>>>> dep3
