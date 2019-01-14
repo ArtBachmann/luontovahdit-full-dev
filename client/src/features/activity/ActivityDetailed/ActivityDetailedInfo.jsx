@@ -8,7 +8,7 @@ const ActivityDetailedInfo = ({ activity }) => {
       <Segment attached="top">
         <Grid>
           <Grid.Column width={1}>
-            <Icon size="large" color="" name="info" />
+            <Icon size="large" color="grey" name="info" />
           </Grid.Column>
           <Grid.Column width={15}>
             <p>{activity.description}</p>
@@ -18,7 +18,7 @@ const ActivityDetailedInfo = ({ activity }) => {
       <Segment attached>
         <Grid verticalAlign="middle">
           <Grid.Column width={1}>
-            <Icon name="calendar" size="large" color="" />
+            <Icon name="calendar" size="large" color="grey" />
           </Grid.Column>
           <Grid.Column width={15}>
             <span>{format(activity.date, 'dddd Do MMM')} at{' '}
@@ -30,13 +30,13 @@ const ActivityDetailedInfo = ({ activity }) => {
       <Segment attached>
         <Grid verticalAlign="middle">
           <Grid.Column width={1}>
-            <Icon name="marker" size="large" color="" />
+            <Icon name="marker" size="large" color="grey" />
           </Grid.Column>
           <Grid.Column width={11}>
             <span>{activity.venue}</span>
           </Grid.Column>
           <Grid.Column width={4}>
-            <Button color="" size="tiny" content="Kartalla" />
+            <Button color="grey" size="tiny" content="Kartalla" />
           </Grid.Column>
         </Grid>
       </Segment>

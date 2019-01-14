@@ -1,26 +1,26 @@
 // https://tylermcginnis.com/react-router-programmatically-navigate/
 
 import React from 'react'
-import SimpleSearch from '../search/SimpleSearch'
+
 import MainMap from '../map/MainMap'
+import NavBar from '../nav/NavBar/NavBar'
 import Footer from './Footer'
 //import '../../index.css';
 const HomePage = ({ history }) => {
   return (
     <div>
       <br />
-      <SimpleSearch />
+      <NavBar />
       <br />
       <div className="ui inverted grey center aligned segment">
         <div className="ui text container">
-          <h1 className="ui inverted stackable header">
-            <div className="content">Luontovahdit</div>
-          </h1>
-          <div onClick={() => history.push('/activities')} className="ui huge white inverted button">
-            Aloitta
+
+          <h2>Luontovahtit demo 0.1</h2>
+          {/* <div onClick={() => history.push('/activities')} className="ui big white inverted button">
+            Havainnot
                 <i className="right arrow icon" />
-          </div>
-          <br />
+          </div> */}
+
           <br />
           <MainMap />
         </div>

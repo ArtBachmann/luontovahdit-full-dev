@@ -7,3 +7,7 @@ git push -u origin master
 
 
 https://github.com/ArtBachmann/luontovahdit-full-dev
+
+
+$ heroku git:remote -a polar-dawn-41403
+set git remote heroku to https://git.heroku.com/polar-dawn-41403.git

@@ -42,8 +42,8 @@ const ActivityDetailedHeader = ({ activity }) => {
 
       <Segment attached="bottom">
         <Button>Keskeytta</Button>
-        <Button color="">Osallistuu keskusteluun</Button>
-        <Button as={Link} to={`/manage/${activity.id}`} color="" floated="right">
+        <Button color="grey">Osallistuu keskusteluun</Button>
+        <Button as={Link} to={`/manage/${activity.id}`} color="grey" floated="right">
           Muokkaa havaintoa
             </Button>
       </Segment>

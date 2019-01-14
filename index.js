@@ -29,7 +29,7 @@ require('dotenv').config();
 let app = express();
 app.use(bodyParser.json())
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 
 mongoose.connect(process.env.ATLAS_URI,
 

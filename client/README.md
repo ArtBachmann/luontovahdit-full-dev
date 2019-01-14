@@ -1,4 +1,4 @@
-1. git clone https://github.com/ArtBachmann/Luontovahdit_a.git
+1. git clone https://github.com/ArtBachmann/luontovahdit-full-dev.git
 2. npm install
 3. npm start
 

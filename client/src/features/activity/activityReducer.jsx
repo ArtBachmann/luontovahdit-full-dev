@@ -9,13 +9,13 @@ export const createActivity = (state, payload) => {
 
 export const updateActivity = (state, payload) => {
   return [
-    ...state.filter(activity => activity.id !== payload.actvityId),
+    ...state.filter(activity => activity.id !== payload.activityId),
     Object.assign({}, payload.activity)
   ]
 }
 
 export const deleteActivity = (state, payload) => {
-  return [...state.filter(activity => activity.id !== payload.actvityId)]
+  return [...state.filter(activity => activity.id !== payload.activityId)]
 }
 
 export const fetchActivities = (state, payload) => {
