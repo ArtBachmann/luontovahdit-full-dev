@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import { Embed } from 'semantic-ui-react'
+import EsriFeatureLayerExample from './esri-feature-layer-example'
 
 class MainMap extends Component {
   render() {
     return (
-      <Embed
-        active='true'
-        aspectRatio='4:3'
-
-        url='https://www.palapelix.fi/wp-content/uploads/2017/08/suomenkartta-etela.jpg'
-      />
+    <div id ="MapContainer">
+      <EsriFeatureLayerExample />
+    </div>
     )
   }
 }
