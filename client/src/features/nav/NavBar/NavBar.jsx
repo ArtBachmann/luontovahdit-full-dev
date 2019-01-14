@@ -49,7 +49,7 @@ class NavBar extends Component {
               to='/createActivity'
               floated="left"
               basic
-              color=''
+              color="grey"
               content="Uusi havainto"
             />
           }

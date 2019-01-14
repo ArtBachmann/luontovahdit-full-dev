@@ -9,65 +9,69 @@ import SelectInput from '../../../app/common/form/SelectInput';
 import RadioInput from '../../../app/common/form/RadioInput';
 
 const interests = [
-  { key: 'drinks', text: 'Drinks', value: 'drinks' },
-  { key: 'culture', text: 'Culture', value: 'culture' },
-  { key: 'film', text: 'Film', value: 'film' },
-  { key: 'food', text: 'Food', value: 'food' },
-  { key: 'music', text: 'Music', value: 'music' },
-  { key: 'travel', text: 'Travel', value: 'travel' }
+  { key: 'drinks', text: 'Luonto', value: 'drinks' },
+  { key: 'culture', text: 'Kultuuri', value: 'culture' },
+  { key: 'film', text: 'Kino', value: 'film' },
+  { key: 'food', text: 'Ruoka', value: 'food' },
+  { key: 'music', text: 'Musiikki', value: 'music' },
+  { key: 'travel', text: 'Matkustaminen', value: 'travel' }
 ];
 
 const AboutPage = ({ pristine, submitting }) => {
   return (
     <Segment>
-      <Header dividing size="large" content="About Me" />
-      <p>Complete your profile to get the most out of this site</p>
+      <Header dividing size="large" content="Tietoa Minusta" />
+      <p>Täydentää omaa profiilia että ystävät tuntisivat sinua paremmin.</p>
       <Form>
         <Form.Group inline>
-          <label>Tell us your status: </label>
-          <Field name="status" component={RadioInput} type="radio" value="single" label="Single" />
+          <label>Elämäni tilanne: </label>
+          <Field name="status"
+            component={RadioInput}
+            type="radio"
+            value="single"
+            label="Yksin" />
           <Field
             name="status"
             component={RadioInput}
             type="radio"
             value="relationship"
-            label="Relationship"
+            label="Suhteessa"
           />
           <Field
             name="status"
             component={RadioInput}
             type="radio"
             value="married"
-            label="Married"
+            label="Avioliittossa"
           />
         </Form.Group>
         <Divider />
-        <label>Tell us about yourself</label>
-        <Field name="about" component={TextArea} placeholder="About Me" />
+        <label>Kirjoita vähän itsestä</label>
+        <Field name="about" component={TextArea} placeholder="Minusta" />
         <Field
           name="interests"
           component={SelectInput}
           options={interests}
           value="interests"
           multiple={true}
-          placeholder="Select your interests"
+          placeholder="Mikä sinua kiinnosta"
         />
         <Field
           width={8}
           name="occupation"
           type="text"
           component={TextInput}
-          placeholder="Occupation"
+          placeholder="Ammatti"
         />
         <Field
           width={8}
           name="origin"
           options={{ types: ['(regions)'] }}
           component={PlaceInput}
-          placeholder="Country of Origin"
+          placeholder="Mistä tulet"
         />
         <Divider />
-        <Button disabled={pristine || submitting} size="large" positive content="Update Profile" />
+        <Button disabled={pristine || submitting} size="large" positive content="Täydentää profiilia" />
       </Form>
     </Segment>
   );

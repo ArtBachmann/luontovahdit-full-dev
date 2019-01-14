@@ -1,5 +1,5 @@
 import React from 'react'
-import { Segment, Header } from 'semantic-ui-react'
+import { Segment } from 'semantic-ui-react'
 
 const Footer = () => (
   <Segment padded="very"
@@ -8,9 +8,7 @@ const Footer = () => (
     inverted
     raised
     huge
-
   >
-    <Header as='h2' textAlign='center'>Footer</Header>
 
   </Segment >
 )

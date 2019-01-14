@@ -14,11 +14,13 @@ const HomePage = ({ history }) => {
       <br />
       <div className="ui inverted grey center aligned segment">
         <div className="ui text container">
-          <div onClick={() => history.push('/activities')} className="ui big white inverted button">
+
+          <h2>Luontovahtit demo 0.1</h2>
+          {/* <div onClick={() => history.push('/activities')} className="ui big white inverted button">
             Havainnot
                 <i className="right arrow icon" />
-          </div>
-          <br />
+          </div> */}
+
           <br />
           <MainMap />
         </div>

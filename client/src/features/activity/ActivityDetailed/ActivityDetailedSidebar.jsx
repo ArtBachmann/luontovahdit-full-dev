@@ -12,7 +12,7 @@ const ActivtyDetailedSidebar = ({ attendees }) => {
         attached="top"
         secondary
         inverted
-        color=""
+        color="grey"
       >
         {attendees && attendees.length} {attendees && attendees.length === 1 ? 'Vierailia' : "Vierailiaa"} Seuraa
           </Segment>
@@ -30,7 +30,7 @@ const ActivtyDetailedSidebar = ({ attendees }) => {
                 {isHost &&
                   <Label
                     style={{ position: 'absolute' }}
-                    color=""
+                    color="grey"
                     ribbon="right"
                   >
                     Host

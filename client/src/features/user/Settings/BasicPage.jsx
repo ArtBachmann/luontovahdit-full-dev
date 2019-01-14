@@ -14,14 +14,14 @@ class Basics extends Component {
     const { pristine, submitting } = this.props;
     return (
       <Segment>
-        <Header dividing size='large' content='Basics' />
+        <Header dividing size='large' content='Yleista' />
         <Form>
           <Field
             width={8}
             name='displayName'
             type='text'
             component={TextInput}
-            placeholder='Known As'
+            placeholder='Tunnettu kuin...'
           />
           <Form.Group inline>
             <label>Suku: </label>
@@ -29,14 +29,14 @@ class Basics extends Component {
               name='gender'
               type='radio'
               value='male'
-              label='Male'
+              label='Mies'
               component={RadioInput}
             />
             <Field
               name='gender'
               type='radio'
               value='female'
-              label='Female'
+              label='Nainen'
               component={RadioInput}
             />
           </Form.Group>
@@ -44,7 +44,7 @@ class Basics extends Component {
             width={8}
             name='dateOfBirth'
             component={DateInput}
-            placeholder='Date of Birth'
+            placeholder='Syntymäaika'
             dateFormat='YYYY-MM-DD'
             showYearDropdown={true}
             showMonthDropdown={true}
@@ -53,14 +53,14 @@ class Basics extends Component {
           />
           <Field
             name='city'
-            placeholder='Home Town'
+            placeholder='Kotipaikka'
             options={{ types: ['(cities)'] }}
             label='Female'
             component={PlaceInput}
             width={8}
           />
           <Divider />
-          <Button disabled={pristine || submitting} size='large' positive content='Update Profile' />
+          <Button disabled={pristine || submitting} size='large' positive content='Muokka profiilia' />
         </Form>
       </Segment>
     );
