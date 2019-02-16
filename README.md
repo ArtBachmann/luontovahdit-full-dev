@@ -1,5 +1,5 @@
 # luontovahdit-full-dev
-Luontovahdit backend
+
 Luontovahdit is a map-based app where users can track activity in mining, prospecting, illegal dumping, and logging. Users can log in and create map hotspots and add images and/or comments when they discover relevant activity in the nature.
 
 Getting Started
@@ -66,7 +66,6 @@ Used for creating interactive UIs and design views for each state in application
 
 -react-router
 React Router is a powerful routing library, that helps add new screens and flows to application while keeping the URL in sync with what's being displayed on the page. Built on top of React.
- 
 
 
 -redux-thunk
