@@ -20,18 +20,18 @@ export const withLeaflet = <Props: Object>(
 ): ComponentType<$Diff<Props, { leaflet: LeafletContext }>> => {
   const WithLeafletComponent = (props, ref) => (
     <Consumer>
-      {(leaflet: LeafletContext) => (
-        <WrappedComponent {...props} leaflet={leaflet} ref={ref} />
-      )}
-    </Consumer>
-  )
-
-  // flowlint-next-line sketchy-null-string:off
-  const name = WrappedComponent.displayName || WrappedComponent.name
+        {(leaflet: LeafletContext) => (
+          <WrappedComponent {...props} leaflet={leaflet} ref={ref} />
+        )}
+      </Consumer>
+      )
+    
+      // flowlint-next-line sketchy-null-string:off
+      const name = WrappedComponent.displayName || WrappedComponent.name
   WithLeafletComponent.displayName = `Leaflet(${name})`
-
-  const LeafletComponent = forwardRef(WithLeafletComponent)
-  hoistNonReactStatics(LeafletComponent, WrappedComponent)
-
-  return LeafletComponent
+    
+      const LeafletComponent = forwardRef(WithLeafletComponent)
+      hoistNonReactStatics(LeafletComponent, WrappedComponent)
+    
+      return LeafletComponent
 }
